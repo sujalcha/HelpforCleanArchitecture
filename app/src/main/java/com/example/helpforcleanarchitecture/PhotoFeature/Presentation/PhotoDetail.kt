@@ -16,17 +16,43 @@ import com.example.helpforcleanarchitecture.PhotoFeature.Domain.Model.PhotoModel
 @Composable
 fun PhotoDetail(photoModel: PhotoModel) {
 
-    Column(modifier = Modifier
-        .fillMaxWidth()
-        .padding(16.dp)
-        .border(BorderStroke(0.25.dp, Color.LightGray))) {
-        Text(text = "Photo id = "+photoModel.id.toString(), modifier = Modifier.padding(8.dp).border(BorderStroke(0.5.dp, Color.LightGray)).fillMaxWidth())
-        Text(text = "Photo title = "+photoModel.title.toString(), modifier = Modifier.padding(8.dp).border(BorderStroke(0.5.dp, Color.LightGray)).fillMaxWidth())
-        Text(text = "Photo albumId = "+photoModel.albumId.toString(), modifier = Modifier.padding(8.dp).border(BorderStroke(0.25.dp, Color.LightGray)).fillMaxWidth())
-        Text(text = "Photo thumbnailUrl = "+photoModel.thumbnailUrl.toString(), modifier = Modifier.padding(8.dp).border(BorderStroke(0.5.dp, Color.LightGray)).fillMaxWidth())
-        Text(text = "Photo url = "+photoModel.url.toString(), modifier = Modifier.padding(8.dp).border(BorderStroke(0.5.dp, Color.LightGray)).fillMaxWidth())
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+            .border(BorderStroke(1.dp, Color.LightGray))
+    ) {
+        Text(text = "Photo id = " + photoModel.id.toString(),
+            modifier = Modifier
+                .border(BorderStroke(0.5.dp, Color.LightGray))
+                .padding(8.dp)
+                .fillMaxWidth()
+        )
+        Text(text = "Photo title = " + photoModel.title.toString(),
+            modifier = Modifier
+                .border(BorderStroke(0.5.dp, Color.LightGray))
+                .padding(8.dp)
+                .fillMaxWidth()
+        )
+        Text(text = "Photo albumId = " + photoModel.albumId.toString(),
+            modifier = Modifier
+                .border(BorderStroke(0.5.dp, Color.LightGray))
+                .padding(8.dp)
+                .fillMaxWidth()
+        )
+        Text(text = "Photo thumbnailUrl = " + photoModel.thumbnailUrl.toString(),
+            modifier = Modifier
+                .border(BorderStroke(0.5.dp, Color.LightGray))
+                .padding(8.dp)
+                .fillMaxWidth()
+        )
+        Text(text = "Photo url = " + photoModel.url.toString(),
+            modifier = Modifier
+                .border(BorderStroke(0.5.dp, Color.LightGray))
+                .padding(8.dp)
+                .fillMaxWidth()
+        )
     }
-
 
 
 }
